@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Pariwisata</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      data-aos-delay="800"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">BOLANG</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item" data-aos="fade-up" data-aos-delay="200">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item" data-aos="fade-up" data-aos-delay="300">
+              <a class="nav-link" href="#">Nature</a>
+            </li>
+            <li class="nav-item" data-aos="fade-up" data-aos-delay="400">
+              <a class="nav-link" href="#">Activity</a>
+            </li>
+            <li class="nav-item" data-aos="fade-up" data-aos-delay="500">
+              <a class="nav-link" href="#">Sign In</a>
+            </li>
+          </ul>
+
+          <button
+            class="btn btn-outline-dark ms-3"
+            id="sidebarToggle"
+            data-aos="fade-right"
+            data-aos-delay="800"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" data-aos="fade-up" data-aos-duration="1500">
+      <div
+        class="hero-content text-center"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <h1>EXPLORE THE GREATER BANDUNG</h1>
+      </div>
+    </section>
+
+    <div
+      class="sidebar bg-dark text-light"
+      id="sidebar"
+      data-aos="fade-up"
+      data-aos-delay="300"
+      data-aos-duration="1200"
+    >
+      <div class="p-3"></div>
+    </div>
+
+    <footer
+      class="bg-dark text-light pt-5 pb-3"
+      data-aos="fade-right"
+      data-aos-duration="800"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <h5>Contact Us:</h5>
+            <p>📞 +62 126-7683-9203</p>
+            <p>✉️ angklung12@gmail.com</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <h5>Legal:</h5>
+            <p>Terms & Condition</p>
+            <p>Privacy Policy</p>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <h5>Help:</h5>
+            <p>FAQ</p>
+          </div>
+        </div>
+        <div>
+          <p>Copyright © 2024 All Right Reserved, Angklung</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

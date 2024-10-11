@@ -1,0 +1,63 @@
+/* Global Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  color: rgb(37, 27, 27);
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar settings */
+.navbar {
+  background-color: transparent; 
+  z-index: 10; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Hero Section */
+.hero {
+  background-image: url("Images/Bandung.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150vh;
+  position: relative;
+}
+
+.hero-content {
+  color: rgba(37, 27, 27);
+  z-index: 1;
+  position: relative;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+}
+
+
+.hero-content {
+  padding-top: 100px; 
+}
+
+footer {
+  background-color: #333;
+  color: white;
+}
+
+footer h5 {
+  font-weight: bold;
+}
+
+footer p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.nav-link {
+  margin-right: 1rem;
+  color: rgb(37, 27, 27);
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
