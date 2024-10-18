@@ -1,7 +1,17 @@
 let display = document.getElementById("display");
 
 function appendToDisplay(value) {
-  display.value += value;
+  // Cek apakah value yang ditekan adalah operator
+  const operators = ["+", "-", "*", "/", "^", "%"];
+  let lastChar = display.value.slice(-1);
+
+  if (operators.includes(lastChar) && operators.includes(value)) {
+    // Jika karakter terakhir adalah operator, ganti dengan operator baru
+    display.value = display.value.slice(0, -1) + value;
+  } else {
+    // Tambahkan karakter ke display
+    display.value += value;
+  }
 }
 
 function clearDisplay() {

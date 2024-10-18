@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjumlahan dengan JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Operasi Penjumlahan</h1>
+        <div class="input-group">
+            <input type="number" id="number1" placeholder="Masukkan angka pertama">
+            <input type="number" id="number2" placeholder="Masukkan angka kedua">
+        </div>
+        <button onclick="tambah()">Hitung</button>
+        <div class="result">
+            <p>Hasil: <span id="result">0</span></p>
+        </div>
+    </div>
+
+    <script>
+        function tambah() {
+            const number1 = parseFloat(document.getElementById('number1').value);
+            const number2 = parseFloat(document.getElementById('number2').value);
+            const result = number1 + number2;
+            
+            // Tampilkan hasil ke layar
+            document.getElementById('result').innerText = isNaN(result) ? 'Input tidak valid' : result;
+        }
+    </script>
+</body>
+</html>
