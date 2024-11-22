@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Produk - Cowfee</title>
+  <!-- Import style.css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Import crud.css -->
+  <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="brand">Cowfee</h1>
+    <div class="nav-menu">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Manage Products</a>
+    </div>
+  </nav>
+
+  <!-- Konten CRUD -->
+  <div class="crud-container">
+    <h2>Manage Products</h2>
+
+    <!-- Form Add Product -->
+    <form id="addProductForm" class="add-product-form">
+      <h3>Add New Product</h3>
+      <input type="text" id="newProductName" placeholder="Product Name" required />
+      <textarea id="newProductDescription" placeholder="Product Description" rows="3" required></textarea>
+      <input type="text" id="newProductImage" placeholder="Image URL" required />
+      <button type="submit" class="btn">Add Product</button>
+    </form>
+
+    <!-- Kartu Produk -->
+    <div id="productCards" class="product-cards">
+      <!-- Produk akan dimuat secara dinamis melalui JavaScript -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><b>CowFee</b> &copy; 2024. All rights reserved.</p>
+    <div class="social-icons">
+      <img src="assets/instagram.svg" alt="Instagram">
+      <img src="assets/twitter.svg" alt="Twitter">
+      <img src="assets/linkedin.svg" alt="LinkedIn">
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="crud.js"></script>
+</body>
+</html>
